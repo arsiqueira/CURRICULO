@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #E69793;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid #333;
+}
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#logo{
+    width: 35%;
+    margin-top: 0.5rem;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: white;
+    color: #E69793;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.balao {
+    background: #e7b3b0;
+    padding: 10px;
+    position: relative;
+    width: 700px;
+    left: 38%;
+    margin-top: -19rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.balao:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    margin-top: 1.2%;
+    z-index: -1.5;
+    background: #e7b3b0;
+    -webkit-transform: rotate(45deg);
+}
+
+@media (max-width: 920px) {
+
+    .balao {
+        background: #e7b3b0;
+        padding: 10px;
+        position: relative;
+        width: 450px;
+        left: 38%;
+        z-index: -1;
+        margin-top: -13rem;
+    }
+
+   
+    #logo{
+        width: 20%;
+        margin-left: 50%;
+        position: static;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #F4E2DF;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+        color: #E8B0AD;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #E69793;
+        text-decoration: underline;
+    }   
+}

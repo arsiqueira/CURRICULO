@@ -1,0 +1,29 @@
+.container{
+    background-color: #E69793;
+    border-radius: 1rem;
+    width: 90%;
+    margin-top: 3rem;
+    height: 40%;
+    margin-left: 5%;
+    padding: 4rem;
+    
+    animation-duration: 3s;
+    animation-name: conte;
+}
+
+label{
+    color: white;
+}
+
+@keyframes conte {
+    from {
+      margin-left: 100%;
+      width: 150%
+    }
+  
+    to {
+      margin-left: 5%;
+      width: 90%;
+    }
+}
+

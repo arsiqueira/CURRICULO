@@ -1,0 +1,25 @@
+.foto{
+    margin-top: 2rem;
+    width: 30%;
+    margin-left: 7%;
+    animation-duration: 3s;
+    animation-name: slidein;
+
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 70%
+    }
+  
+    to {
+      margin-left: 7%;
+      width: 30%;
+    }
+}
+
+h1{
+    color: white;
+}
+
+
